@@ -3,7 +3,7 @@ package postgres
 import (
 	"context"
 
-	"github.com/DarRo9/Service_for_creating_and_processing_tenders/internal/config"
+	"github.com/DarRo9/Tenders/internal/config"
 	"github.com/jackc/pgx/v5/pgxpool"
 )
 

@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 
-	"github.com/DarRo9/Service_for_creating_and_processing_tenders/internal/repository"
-	"github.com/DarRo9/Service_for_creating_and_processing_tenders/models"
+	"github.com/DarRo9/Tenders/internal/repository"
+	"github.com/DarRo9/Tenders/models"
 )
 
 func (s *Service) ConstructBid(ctx context.Context, bid *models.BidCreate) (*models.BidResponse, error) {

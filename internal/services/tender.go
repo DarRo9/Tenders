@@ -3,7 +3,7 @@ package service
 import (
 	"context"
 
-	"github.com/DarRo9/Service_for_creating_and_processing_tenders/models"
+	"github.com/DarRo9/Tenders/models"
 )
 
 func (s *Service) RefreshTenderStatus(ctx context.Context, tenderID, username string, status models.TenderStatus) (*models.TenderResponse, error) {

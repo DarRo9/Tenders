@@ -1,7 +1,7 @@
 package httphandler
 
 import (
-	service "github.com/DarRo9/Service_for_creating_and_processing_tenders/internal/services"
+	service "github.com/DarRo9/Tenders/internal/services"
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 )
