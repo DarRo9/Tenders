@@ -1,0 +1,36 @@
+services:
+  pg:
+    restart: always
+    container_name: pg_tender
+    image: postgres:alpine3.19
+    environment:
+        - POSTGRES_PASSWORD=postgres
+        - POSTGRES_USER=postgres
+        - POSTGRES_DB=tender-service
+    ports:
+    - "5432:5432"
+    networks:
+    - app_network
+  
+  app:
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: app
+    networks:
+      - app_network
+    ports:
+      - "8080:8080"
+    environment:
+      SERVER_ADDRESS: 0.0.0.0:8080
+      POSTGRES_CONN: postgres://postgres:postgres@pg_tender:5432/tender-service?sslmode=disable
+    volumes:
+      - ./migrations:/migrations
+    depends_on:
+      - pg
+
+networks:
+  app_network:
+    driver: bridge
+    
