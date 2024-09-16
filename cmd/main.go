@@ -8,11 +8,11 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/DarRo9/Service_for_creating_and_processing_tenders/internal/config"
-	httphandler "github.com/DarRo9/Service_for_creating_and_processing_tenders/internal/handlers/http"
-	"github.com/DarRo9/Service_for_creating_and_processing_tenders/internal/repository/postgres"
-	"github.com/DarRo9/Service_for_creating_and_processing_tenders/internal/server"
-	service "github.com/DarRo9/Service_for_creating_and_processing_tenders/internal/services"
+	"github.com/DarRo9/Tenders/internal/config"
+	httphandler "github.com/DarRo9/Tenders/internal/handlers/http"
+	"github.com/DarRo9/Tenders/internal/repository/postgres"
+	"github.com/DarRo9/Tenders/internal/server"
+	service "github.com/DarRo9/Tenders/internal/services"
 )
 
 func main() {

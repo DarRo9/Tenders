@@ -3,8 +3,8 @@ package service
 import (
 	"context"
 
-	"github.com/DarRo9/Service_for_creating_and_processing_tenders/internal/repository"
-	"github.com/DarRo9/Service_for_creating_and_processing_tenders/models"
+	"github.com/DarRo9/Tenders/internal/repository"
+	"github.com/DarRo9/Tenders/models"
 	"github.com/sirupsen/logrus"
 )
 

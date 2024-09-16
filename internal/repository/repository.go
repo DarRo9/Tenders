@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	"github.com/DarRo9/Service_for_creating_and_processing_tenders/models"
+	"github.com/DarRo9/Tenders/models"
 )
 
 type TenderRepository interface {

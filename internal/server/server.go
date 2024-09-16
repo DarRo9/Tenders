@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/DarRo9/Service_for_creating_and_processing_tenders/internal/config"
+	"github.com/DarRo9/Tenders/internal/config"
 )
 
 type Server struct {

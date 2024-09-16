@@ -1,6 +1,6 @@
 package httphandler
 
-import "github.com/DarRo9/Service_for_creating_and_processing_tenders/models"
+import "github.com/DarRo9/Tenders/models"
 
 type UsernameRequest struct {
 	Username string `form:"username" binding:"required,max=50"`
